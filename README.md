@@ -1,4 +1,4 @@
-#How to Use
+# How to Use
 
 From bash, source the passstore.sh file.
 
@@ -10,20 +10,20 @@ cd pass_store
 
 Once this is sourced, you can use the two functions `ps_encrypt` and `ps_decrypt`.
 
-#Encrypting a password
+# Encrypting a password
 
 ```
 ps_encrypt "my awesome password"
 kqwfd7Pryamn99/FcPfL8oYaqrLwdMMRTZCSauqMgsw=
 ```
 
-#To decrypt 
+# To decrypt 
 
 ```
 ps_decrypt "kqwfd7Pryamn99/FcPfL8oYaqrLwdMMRTZCSauqMgsw="
 ```
 
-#In a script
+# In a script
 
 ```
 . /path/to/pass_store/passstore.sh
@@ -32,10 +32,7 @@ mypass=$(ps_decrypt kqwfd7Pryamn99/FcPfL8oYaqrLwdMMRTZCSauqMgsw=)
 
 ```
 
-#Under the hood
+# Under the hood
 
 When the passstore.sh script is sourced for the first time, creates the random key which will be used to encrypt with. You can find these files under ~/vault/keystore/aeskey.key.
-
-
-
 
